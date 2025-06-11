@@ -1,0 +1,31 @@
+body {
+  background: #fdf6e3;
+  color: #333;
+  font-family: 'Pretendard', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+h1, h2 {
+  color: #a83279;
+}
+.panel {
+  border: 2px solid #a83279;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fffaf0;
+  margin: 1.5rem 0;
+}
+code {
+  background: #eee;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: monospace;
+}
+pre {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
