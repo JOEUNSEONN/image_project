@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rich 타로 운세 콘솔 프로그램</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔮 Rich 타로 운세 콘솔 프로그램</h1>
+  <p>
+    <strong>Rich</strong> 라이브러리를 활용해 만든 감성 콘솔 기반 타로 카드 뽑기 프로그램입니다.
+    실행하면 오늘의 운세를 무작위로 뽑아, 마치 타로 카드처럼 꾸며서 보여줍니다.
+  </p>
+
+  <h2>✨ 주요 기능</h2>
+  <div class="panel">
+    ✅ Rich로 감성적인 콘솔 카드 출력<br/>
+    ✅ 하루 운세 무작위 추천<br/>
+    ✅ 이모지와 색상으로 시각적 효과 제공<br/>
+    ✅ 입력형 맞춤 운세 기능 추가
+  </div>
+
+  <h2>💻 코드 예시</h2>
+  <pre><code>
+from rich import print
+from rich.panel import Panel
+from rich.align import Align
+import random
+
+fortunes = ["휴식이 필요해요 😴", "좋은 일이 생깁니다 🎁"]
+selected = random.choice(fortunes)
+print(Panel(Align.center(selected), title="오늘의 운세"))
+  </code></pre>
+
+  <h2>🖼 실행 결과 예시</h2>
+  <img src="images/penguin.jpg" alt="타로 운세 콘솔 예시 이미지"
+       style="max-width: 100%; border: 2px solid #ccc; border-radius: 10px; margin-bottom: 20px;">
+
+  <div class="panel">
+    <strong>🔮 당신의 타로 메시지</strong><br/>
+    😴 휴식이 필요한 하루입니다. 너무 무리하지 마세요.
+  </div>
+
+  <h2>🧙 입력 기반 운세 기능 추가</h2>
+  <div class="panel">
+    <p>
+      사용자가 <strong>성별</strong>, <strong>양력/음력</strong>, <strong>생년월일</strong>을 직접 입력하면<br/>
+      맞춤형 운세 메시지를 출력해주는 콘솔 프로그램입니다.
+    </p>
+  </div>
+
+  <h3>📌 실행 예시</h3>
+  <pre><code>
+성별을 입력하세요 (m/f): f
+양력 또는 음력을 입력하세요 (solar/lunar): solar
+생일을 입력하세요 (예: 2001-06-11): 2001-06-11
+
+🔮 오늘의 운세
+🎁 깜짝 선물 같은 일이 생길 수 있어요!
+  </code></pre>
+
+  <h2>⚙️ 실행 방법</h2>
+  <ol>
+    <li>Python 설치</li>
+    <li>Rich 설치: <code>pip install rich</code></li>
+    <li>타로 프로그램 실행: <code>python tarot_fortune.py</code></li>
+    <li>입력형 프로그램 실행: <code>python fortune_console.py</code></li>
+  </ol>
+
+  <h2>📂 프로젝트 파일 구성</h2>
+  <ul>
+    <li><code>tarot_fortune.py</code> – 번호 선택 기반 콘솔 프로그램</li>
+    <li><code>fortune_console.py</code> – 입력 기반 맞춤 운세 콘솔 프로그램</li>
+    <li><code>index.html</code> – 소개용 웹사이트</li>
+    <li><code>style.css</code> – 사이트 스타일시트</li>
+    <li><code>images/</code> – 결과 예시 이미지 폴더</li>
+  </ul>
+</body>
+</html>
+
